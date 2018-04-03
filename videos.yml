@@ -1,0 +1,39 @@
+title: Videos
+icon: film
+pages:
+  limit: 8
+  template:
+    - video
+
+fields:
+  dkm_videos:
+    label: Videos
+    type: structure
+    style: table
+    fields:
+      name:
+        label: Video Title
+        type: text
+      video_type:
+        label: Category
+        type: radio
+        options:
+          vimeo: Vimeo
+          youtube: Youtube
+      episode:
+        label: Episode
+        type: text
+        width: 1/2
+      video_id:
+        label: Video ID
+        type: text
+        width: 1/2
+      video_series:
+        label: Link to Series
+        type: select
+        options: query
+        query:
+          page: archives
+          fetch: children
+          value: '{{uid}}'
+          text: '{{title}}'
