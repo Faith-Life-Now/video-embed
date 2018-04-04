@@ -419,3 +419,13 @@ Dkm-videos:
   episode: "703"
   video_id: "250812040"
   video_series: ""
+-
+  name: Christmas Show 2016
+  episode: "608"
+  video_id: "195994715"
+  video_type: vimeo
+- 
+  name:Tax Madness
+  episode: ""
+  video_id: "db-SP_AYQg8"
+  video_type: youtube
